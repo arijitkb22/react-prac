@@ -1,0 +1,42 @@
+.change-bg {
+  height: 100px;
+  width: 100px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.clicked {
+  background-color: greenyellow;
+}
+.menu-icon {
+  display: none;
+}
+@media (max-width:768px) {
+  .menu-icon {
+    display: block;
+  }
+  .menu-items {
+    display: none;
+    background-color: #333;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 95%;
+    color: #fff;
+    &.open {
+      display: block;
+    }
+  }
+}
+
+.light-theme {
+  background-color: #fff;
+  color: #333;
+}
+
+.dark-theme {
+  background-color: #333;
+  color: #fff;
+
+}
+
